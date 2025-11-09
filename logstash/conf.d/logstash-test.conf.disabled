@@ -1,0 +1,13 @@
+
+
+               input {
+                  stdin { } 
+               }
+
+              output {
+                 elasticsearch {
+                  hosts => ["https://localhost:9200"]
+                  index => "logstash-test"
+                 }
+               stdout { codec => rubydebug }
+              } 
